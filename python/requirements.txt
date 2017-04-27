@@ -1,0 +1,4 @@
+Requests
+ibmiotf
+MySQL-python
+geopy
