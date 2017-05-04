@@ -12,8 +12,8 @@ from decimal import Decimal
 
 
 
-DELAY = 15
-STOP = 200
+DELAY = 2
+STOP = 2000
 
 def getGeolocation(latitude, longitude):
 	f = urllib2.urlopen('http://api.wunderground.com/api/8eef714101de1a6c/geolookup/q/'+latitude+','+longitude+'.json')
@@ -126,7 +126,7 @@ with open('SRBwaterquality2.csv') as csvDataFile:
 		end_time = time.time()
 		print("the last entry was: " + str(count))
 		count = count + 1;
-		time.sleep(DELAY - (end_time-start_time))
+		time.sleep(DELAY)
 
 cur.close()
 
