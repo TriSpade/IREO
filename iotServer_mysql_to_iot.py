@@ -113,10 +113,10 @@ def publish_csv(row):
 
 		
 
-con = MySQLdb.connect(host= "webofagents.cs.clemson.edu",
-						user= "sim_app",
-						passwd= "irviewer",
-						db= "IRandWeather")
+con = MySQLdb.connect(host= "BLANK",
+						user= "BLANK",
+						passwd= "BLANK",
+						db= "BLANK")
 
 print("connected to sqldb")
 
@@ -124,12 +124,12 @@ cur = con.cursor()
 
 
 config = {
-    "org" : "vh3t8t",
-    "id" : "8649865433",
+    "org" : "BLANK",
+    "id" : "BLANK",
     "domain": "internetofthings.ibmcloud.com",
-    "type" : "InteliRiver",
+    "type" : "BLANK",
     "auth-method" : "token",
-    "auth-token" : "8649865433"
+    "auth-token" : "BLANK"
 }
 
 try:
